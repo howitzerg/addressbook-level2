@@ -145,4 +145,8 @@ public class StorageFile {
         return path.toString();
     }
 
+	public boolean fileExists() {
+        return path.toFile().exists();
+	}
+
 }

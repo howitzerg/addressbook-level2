@@ -106,6 +106,9 @@ public class Main {
     private CommandResult executeCommand(Command command)  {
         try {
             command.setData(addressBook, lastShownList);
+            if(!storage.fileExists()) {
+            	ui.showFileDoesNotExistMessage(storage.getPath());
+            }
             CommandResult result = command.execute();
             storage.save(addressBook);
             return result;

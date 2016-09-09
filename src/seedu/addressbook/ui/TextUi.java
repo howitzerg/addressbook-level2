@@ -166,4 +166,9 @@ public class TextUi {
         return String.format(MESSAGE_INDEXED_LIST_ITEM, visibleIndex, listItem);
     }
 
+	public void showFileDoesNotExistMessage(String path) {
+		showToUser("File has been deleted, creating new file at " + path);
+		
+	}
+
 }
