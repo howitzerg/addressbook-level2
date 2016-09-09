@@ -4,8 +4,8 @@ import seedu.addressbook.data.exception.IllegalValueException;
 
 public class Unit {
 	
-	public static final String UNIT_ADDRESS_CONSTRAINTS = "Person addresses can be in any format";
-	public static final String UNIT_VALIDATION_REGEX = ".+";
+	public static final String UNIT_ADDRESS_CONSTRAINTS = "Unit must be prefixed with #";
+	public static final String UNIT_VALIDATION_REGEX = "(#).+";
 	
 	private String unit;
 	

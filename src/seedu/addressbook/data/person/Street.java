@@ -4,7 +4,7 @@ import seedu.addressbook.data.exception.IllegalValueException;
 
 public class Street {
 	
-	public static final String STREET_ADDRESS_CONSTRAINTS = "Person addresses can be in any format";
+	public static final String STREET_ADDRESS_CONSTRAINTS = "Street can be in any format";
 	public static final String STREET_VALIDATION_REGEX = ".+";
 	
 	private String street;

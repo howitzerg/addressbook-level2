@@ -53,7 +53,7 @@ public interface ReadOnlyPerson {
         if (getAddress().isPrivate()) {
             builder.append(detailIsPrivate);
         }
-        builder.append(getAddress())
+        builder.append(getAddress().getAddress())
                 .append(" Tags: ");
         for (Tag tag : getTags()) {
             builder.append(tag);
@@ -74,7 +74,7 @@ public interface ReadOnlyPerson {
             builder.append(" Email: ").append(getEmail());
         }
         if (!getAddress().isPrivate()) {
-            builder.append(" Address: ").append(getAddress());
+            builder.append(" Address: ").append(getAddress().getAddress());
         }
         builder.append(" Tags: ");
         for (Tag tag : getTags()) {
